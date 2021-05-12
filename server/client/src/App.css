@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+.navbar-nav .nav-item {
+  margin-right: 1rem;
+}
+figure img {
+  max-width: 100%;
+}
+
+.register-form .form-group {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ced4da;
+}
+
+.register-form .form-group input {
+  border: 0;
+}
+
+.register-form .form-group i {
+  color: #727272;
+}
+
+.home-page {
+  background: #ebf0fe; /* Old browsers */
+  background: -moz-linear-gradient(left, #ebf0fe 0%, #ebf0fe 50%, #ffffff 50%, #ffffff 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #ebf0fe 0%, #ebf0fe 50%, #ffffff 50%, #ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #ebf0fe 0%, #ebf0fe 50%, #ffffff 50%, #ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf0fe', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+}
