@@ -62,46 +62,49 @@ const Contact = () => {
     }
   };
 
+  const contactList = [
+    {
+      id: 0,
+      icon: <i className="zmdi zmdi-smartphone-iphone zmdi-hc-2x text-info"></i>,
+      ob1: "Phone",
+      ob2: "+91 9658834473",
+    },
+    {
+      id: 1,
+      icon: <i className="zmdi zmdi-smartphone-iphone zmdi-hc-2x text-info"></i>,
+      ob1: "Email",
+      ob2: "biswajitmohanty54@gmail.com",
+    },
+    {
+      id: 2,
+      icon: <i className="zmdi zmdi-smartphone-iphone zmdi-hc-2x text-info"></i>,
+      ob1: "Address",
+      ob2: "Brahmagiri, Puri",
+    },
+  ];
+
+  const clArray = contactList.map((contactCard, i) => {
+    return (
+      <>
+        <div className="col-md-4">
+          <div className="d-flex align-items-center p-3 shadow-sm rounded mb-2">
+            <div>{contactCard.icon}</div>
+            <div className="ms-3">
+              <h5 className="mb-1">{contactCard.ob1}</h5>
+              <h6>{contactCard.ob2}</h6>
+            </div>
+          </div>
+        </div>
+      </>
+    );
+  });
+
   return (
     <>
       <section className="contact-info">
         <div className="container">
-          <div className="row my-5">
-            <div className="col-md-4">
-              <div className="d-flex align-items-center p-3 shadow-sm rounded mb-2">
-                <div>
-                  <i className="zmdi zmdi-smartphone-iphone zmdi-hc-2x text-info"></i>
-                </div>
-                <div className="ms-3">
-                  <h5 className="mb-1">Phone</h5>
-                  <h6>+91 9658834473</h6>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="d-flex align-items-center p-3 shadow-sm rounded mb-2">
-                <div>
-                  <i className="zmdi zmdi-smartphone-iphone zmdi-hc-2x text-info"></i>
-                </div>
-                <div className="ms-3">
-                  <h5 className="mb-1">Email</h5>
-                  <h6>biswajitmohanty54@gmail.com</h6>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="d-flex align-items-center p-3 shadow-sm rounded mb-2">
-                <div>
-                  <i className="zmdi zmdi-smartphone-iphone zmdi-hc-2x text-info"></i>
-                </div>
-                <div className="ms-3">
-                  <h5 className="mb-1">Address</h5>
-                  <h6>Brahmagiri, Puri</h6>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="p-5 m-5 shadow-sm rounded">
+          <div className="row my-5">{clArray}</div>
+          <div className="cardPack shadow-sm rounded">
             <h2 className="mb-3">Get in touch</h2>
             <form method="POST">
               <div className="row">

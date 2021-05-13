@@ -31,3 +31,14 @@ figure img {
   background: linear-gradient(to right, #ebf0fe 0%, #ebf0fe 50%, #ffffff 50%, #ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf0fe', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
 }
+.cardPack {
+  padding: 5rem;
+  margin: 5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .cardPack {
+    padding: 1rem;
+    margin: 1rem;
+  }
+}

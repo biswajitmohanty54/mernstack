@@ -46,10 +46,10 @@ const Signup = () => {
     <>
       <section className="signup">
         <div className="container mt-5">
-          <div className="p-5 m-5 shadow-sm rounded">
+          <div className="cardPack shadow-sm rounded">
             <h2 className="mb-4">Sign Up</h2>
             <div className="row">
-              <div className="col-6">
+              <div className="col-md-6">
                 <form className="register-form" id="register-form" method="POST">
                   <div className="form-group mb-3">
                     <label htmlFor="name">
@@ -93,7 +93,7 @@ const Signup = () => {
                 </form>
               </div>
 
-              <div className="col-6">
+              <div className="col-md-6">
                 <figure>
                   <img src={singpic} alt="Registration pic" />
                 </figure>

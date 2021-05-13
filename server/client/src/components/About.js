@@ -37,13 +37,15 @@ const About = () => {
     <>
       <section className="about">
         <div className="container">
-          <div className="p-5 m-5 shadow-sm rounded">
+          <div className="cardPack shadow-sm rounded">
             <form method="GET">
               <div className="row">
-                <div className="col-4">
-                  <img src={Biswapic} alt="Biswajit" />
+                <div className="col-md-4">
+                  <figure class="figure">
+                    <img src={Biswapic} alt="Biswajit" />
+                  </figure>
                 </div>
-                <div className="col-6">
+                <div className="col-md-6">
                   <h6>{userData.name}</h6>
                   <h6>{userData.work}</h6>
                   <p>Ranking: 1/10</p>
@@ -60,12 +62,12 @@ const About = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="col-2">
+                <div className="col-md-2">
                   <input type="submit" className="btn btn-outline-primary" value="Edit Profile" />
                 </div>
               </div>
               <div className="row">
-                <div className="col-4">
+                <div className="col-md-4">
                   <a href="">Youtube</a>
                   <br />
                   <a href="">Facebook</a>
@@ -78,66 +80,66 @@ const About = () => {
                   <br />
                   <a href="">Dribble</a>
                 </div>
-                <div className="col-8">
+                <div className="col-md-8">
                   <div className="tab-content" id="pills-tabContent">
                     <div className="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                       <div className="row">
-                        <div className="col-4">
+                        <div className="col-md-4">
                           <label>User ID</label>
                         </div>
-                        <div className="col-8">
+                        <div className="col-md-8">
                           <p>4564564564564564564</p>
                         </div>
-                        <div className="col-4">
+                        <div className="col-md-4">
                           <label>Name</label>
                         </div>
-                        <div className="col-8">
+                        <div className="col-md-8">
                           <p>{userData.name}</p>
                         </div>
-                        <div className="col-4">
+                        <div className="col-md-4">
                           <label>Email</label>
                         </div>
-                        <div className="col-8">
+                        <div className="col-md-8">
                           <p>{userData.email}</p>
                         </div>
-                        <div className="col-4">
+                        <div className="col-md-4">
                           <label>Phone</label>
                         </div>
-                        <div className="col-8">
+                        <div className="col-md-8">
                           <p>{userData.phone}</p>
                         </div>
-                        <div className="col-4">
+                        <div className="col-md-4">
                           <label>Profession</label>
                         </div>
-                        <div className="col-8">
+                        <div className="col-md-8">
                           <p>{userData.work}</p>
                         </div>
                       </div>
                     </div>
                     <div className="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                       <div className="row">
-                        <div className="col-4">
+                        <div className="col-md-4">
                           <label>User IDE</label>
                         </div>
-                        <div className="col-8">
+                        <div className="col-md-8">
                           <p>4564564564564564564</p>
                         </div>
-                        <div className="col-4">
+                        <div className="col-md-4">
                           <label>User ID</label>
                         </div>
-                        <div className="col-8">
+                        <div className="col-md-8">
                           <p>4564564564564564564</p>
                         </div>
-                        <div className="col-4">
+                        <div className="col-md-4">
                           <label>User ID</label>
                         </div>
-                        <div className="col-8">
+                        <div className="col-md-8">
                           <p>4564564564564564564</p>
                         </div>
-                        <div className="col-4">
+                        <div className="col-md-4">
                           <label>User ID</label>
                         </div>
-                        <div className="col-8">
+                        <div className="col-md-8">
                           <p>4564564564564564564</p>
                         </div>
                       </div>
